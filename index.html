@@ -5,14 +5,15 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1>ToDo's</h1>
-        <p>“Live in the Moment”</p>
+		<h1  data-aos="zoom-in">ToDo's</h1>
+        <p data-aos="zoom-in">“Live in the Moment”</p>
 
         <br>
 
-    <form id="form">
+    <form id="form" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
 
       <ul class="todos" id="todos"></ul>
@@ -20,5 +21,9 @@
     <small>Left click to toggle completed. <br> Right click to delete todo</small>
 
     <script src="script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	  </script>
 	</body>
 </html>
